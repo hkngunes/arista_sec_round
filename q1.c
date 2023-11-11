@@ -1,3 +1,5 @@
+// Previous version of this code was giving segmentation fault and it is asked to find the errors in the code.
+
 #include "stdio.h"
 #include "stdlib.h"
 
@@ -9,13 +11,13 @@ char* getFirstWord(char* str){
   }
   if(*iter == ' '){
     *iter = '\0';
-    iter++;
+    iter++; // this iteration was not available here - 1 fault
   }
   return iter;
 }
 
 void testGetFirstWord(){
-  char str[] = "This is my test string to test a new function.";
+  char str[] = "This is my test string to test a new function.";  // This was defined as char*, this was the second fault.
   char* curr = str;
   while(*curr != '\0'){
     char* word = getFirstWord(curr);
@@ -28,3 +30,5 @@ int main(){
   testGetFirstWord();
   return 0;
 }
+
+// I found both but took more than 30 mins. That was fail
