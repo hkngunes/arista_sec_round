@@ -1,3 +1,13 @@
+// Here the class blueprint was given and asked to fill it. The test function is written by me, 
+// in the orijinal question, there was several test functions and expected value was given directly.
+// To test my code, i convert them to test function that takes inputs from user.
+
+// In my solution i calculate sum and avr values in get function. But ı used i < (ind<w_size)?ind:w_size in the for condition,
+// but it didnt work and i could not understand it. After closing with (), code is run successfully.
+// Then it is asked to improve my solution but I could not offer a second solution. Then he said that maybe you can calculate sum
+// in a different place. Than a define sum as class var and calculate it in put, however, i was forget to differ the previos value
+// from sum. :(
+
 #include "stdio.h"
 #include "stdlib.h"
 
