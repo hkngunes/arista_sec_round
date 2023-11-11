@@ -31,4 +31,4 @@ int main(){
   return 0;
 }
 
-// I found both but took more than 30 mins. That was fail
+// I found both but took nearly 40 mins.
