@@ -1,6 +1,8 @@
+// In this question test function was given and it is asked to write foundWords function.
+// I wrote the function but complete is by fixing errors and warnings in more than 5 attempts.
+
 #include "stdio.h"
 #include "stdlib.h"
-#include "string.h"
 
 void foundWords(const char* words[], const char *rows[], int size ){
   int ind = 0;
